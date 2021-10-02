@@ -14,6 +14,10 @@
             <img class= "pic" 
                 src= "favicon.ico"
                 alt="Welcome to CSE110">
+            <details>
+                <summary>Details</summary>
+                No details to display. Sorry :(
+            </details>
             <h2> topics </h2>
             <nav>
                 <ul>
@@ -25,7 +29,7 @@
                     <li> <a href="#Questions">Questions</a> </li>
                     <li> <a href="#SoundSample">Sound Sample</a> </li>
                     <li> <a href="#VideoSample">Video Sample</a> </li>
-
+                    <li><a href="#Form">Form</a>/li>
                 </ul>
             </nav>
         </header>
@@ -71,7 +75,59 @@
                     type="video/mp4">
                 </video>
             </section>
+            <section>
+                <h2><a name="Form"> Forms</a></h2>
+                <form action="/form_page" method="post">
+                    <label for="name">What's your name? </label>
+                    <input type="text" id="name" name="user_name">
+                </form>
+                <hr>
+                <h2>Text area</h2>
+                <textarea>
+                    id="textbox" name="textbox" rows="10" cols="10"
+                </textarea>
+                <hr>
+                <h2> datalist</h2>
+                <label for="cse-class-choice">What class have you taken? (choose 1)</label>
+                <input list="cse-classes" id="cse-class-choice" name="cse-class-choice">
+                <datalist id="cse-classes">
+                    <option value="cse8a">
+                    <option value="cse12">
+                    <option value="cse30">
+                    <option value="cse100">
+                    <option value="cse110">  
+                </datalist> 
+                <hr>
+                <h2> select your favorite class</h2>
+                <label for="class-select">Choose your favorite class:</label>
+                <select name="classes" id="class-select">
+                <option value="">--Please choose an option--</option>
+                <option value="cse30">cse30</option>
+                <option value="cse100">cse100</option>
+                <option value="cse110">cse110</option>
+                </select>
+                <hr>
+                <fieldset>
+                   <legend>What year will you graduate?></legend> 
+                   <input type="radio" id="2022" name="year">
+                   <label for="2022">2022</label><br>
 
+                   <input type="radio" id="2023" name="year">
+                   <label for="2023">2023</label><br>
+
+                   <input type="radio" id="2024" name="year">
+                   <label for="2024">2024</label><br>
+
+                   <input type="radio" id="2025" name="year">
+                   <label for="2025">2025</label><br>
+                </fieldset>
+                <button class="favorite styled" type="button">
+                    Click this button for fun!
+                </button>
+            </section>
         </main>
+        <footer>
+            <p> Created by Asad Imran on October 1, 2021</p>
+        </footer>
     </body>
 </html>
