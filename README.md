@@ -1,9 +1,9 @@
 Author: Asad Imran 
-October 1, 2021
+October 7, 2021
 CSE110
 
-link to published site: https://asadimran123.github.io/Lab2/
+link to published site: https://asadimran123.github.io/fa21-cse110-lab3/
 
-link to repo: https://github.com/Asadimran123/Lab2.git
+link to repo: https://github.com/Asadimran123/fa21-cse110-lab3
 
-w3 validtation screenshots are in the screenshots folder
+
