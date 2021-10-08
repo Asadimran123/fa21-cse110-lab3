@@ -1,1 +1,62 @@
+/*Author: Muhammad Asad Imran */
+/*October 7, 2021 */
 
+/*BODY*/
+.body{
+    font-family: 'Times New Roman', Times, serif;
+}
+/*HEADER*/
+/*changes the color for the header background*/
+.box{
+    background-color: rgb(200, 200, 200);
+}
+#headerMain{
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 10px;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    padding-right: .25em;
+    padding-left: .25em;
+    margin-top: .25em;
+    margin-bottom: .25em;
+    margin-right: .25em;
+    margin-left: .25em;
+}
+
+#authorName{
+    color: #be1717;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-align: center;
+    margin: 50px 50px 50px 50px;
+    padding: 1em 1em 1em 1em;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+#intro{
+    height: 40px;
+    width: 125px;
+    background-color: aqua;
+}
+
+#Attendance{
+    max-width: 130px;
+    max-height: 100px;
+    background-color: blueviolet;
+}
+
+#agenda{
+    position: absolute;
+    top: 50px; 
+    left: 50px;
+}
+
+#recap{
+    position: static;
+}
