@@ -1,8 +1,9 @@
 /*Author: Muhammad Asad Imran */
 /*October 7, 2021 */
 
+/*w3 school documentation used as reference*/
 /*BODY*/
-.body{
+*.body{
     font-family: 'Times New Roman', Times, serif;
 }
 /*HEADER*/
@@ -51,12 +52,83 @@
     background-color: blueviolet;
 }
 
-#agenda{
-    position: absolute;
-    top: 50px; 
-    left: 50px;
-}
-
 #recap{
     position: static;
 }
+/*makes text inline*/
+#LookingForward{
+    display: inline;
+}
+
+/*makes text blocked*/
+/*only shows on larger screens*/
+@media screen and (min-width: 100px){
+    #questions:active {
+        display: block;
+    }
+}
+
+
+/*makes button blue when hovering*/
+.favoritestyled:hover{
+    color: blue;
+    background-color: #be1717;
+}
+/*make list red when clicked*/
+#list1:active{
+    color: red;
+}
+
+/*sets absolute position for favicon*/
+.pic{
+    position: absolute; 
+    top: 100px;
+    left: 350px;
+}
+
+h2{
+    color: pink;
+}
+
+a[value]{
+    color: magenta;
+}
+
+h1, h2, h3{
+    font-style: italic;
+}
+
+section h2{
+    text-decoration: underline;
+}
+
+h2 + p {
+    color: aqua;
+}
+
+h2 ~ p{
+    background-color: yellow;
+}
+
+.grid{
+    display: grid;
+    grid-gap: 20px;
+    background-color: lightgrey;
+    padding: 20px;
+}
+.grid > div{ 
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+}
+
+
+#divAttribute.classAttribute{
+    color: hsl(250, 100%, 50%);
+}
+
+
+
+
+
