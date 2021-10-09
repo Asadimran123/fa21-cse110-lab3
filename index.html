@@ -7,11 +7,26 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" href="mystyle.css">
     </head>
+    <style>
+        .flex{
+            display: flex;
+            background-color: red;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .flex > div{
+            background-color: aquamarine;
+            margin: 10px;
+            padding: 20px; 
+            font-size: 30px; 
+        }
+    </style>
     <body class="body">
         <header class="box">
             <h1 id="headerMain"> <strong>Meeting minutes</strong> </h1>
             <p id="authorName"> <b>Author: Muhammad Asad Imran</b></p>
-            <p> <i>CSE 110 FA21</i></p>
+            <p id="classheader"> <i>CSE 110 FA21</i></p>
             <img class= "pic" 
                 src= "favicon.ico"
                 alt="Welcome to CSE110">
@@ -21,16 +36,16 @@
             </details>
             <h2 class="h2"> topics </h2>
             <nav>
-                <ul>
-                    <li> <a href="#Introduction">Introduction</a> </li>
-                    <li> <a href="#AttendanceList">Attendance List</a> </li>
-                    <li> <a href="#Agenda">Agenda</a></li>
-                    <li> <a href="#Recap">Recap from last meeting</a></li>
-                    <li> <a href="#LookingForward">Looking Forward</a> </li>
-                    <li> <a href="#Questions">Questions</a> </li>
-                    <li> <a href="#SoundSample">Sound Sample</a> </li>
-                    <li> <a href="#VideoSample">Video Sample</a> </li>
-                    <li><a href="#Form">Form</a></li>
+                <ul id="list1">
+                    <li class="listItem"> <a href="#Introduction">Introduction</a> </li>
+                    <li class="listItem"> <a href="#AttendanceList">Attendance List</a> </li>
+                    <li class="listItem"> <a href="#Agenda">Agenda</a></li>
+                    <li class="listItem"> <a href="#Recap">Recap from last meeting</a></li>
+                    <li class="listItem"> <a href="#LookingForward">Looking Forward</a> </li>
+                    <li class="listItem"> <a href="#Questions">Questions</a> </li>
+                    <li class="listItem"> <a href="#SoundSample">Sound Sample</a> </li>
+                    <li class="listItem"> <a href="#VideoSample">Video Sample</a> </li>
+                    <li class="listItem"><a href="#Form">Form</a></li>
                 </ul>
             </nav>
         </header>
@@ -54,14 +69,18 @@
                     <li>Publish site to github</li>
                 </ol>
                 <hr>
-                <h2 id="recap"> <a name="Recap"> Recap</a> </h2>
-                <p> Nothing to recap because it's the first meeting :)</p> 
+                <h2> <a name="Recap"> Recap</a> </h2>
+                <p id="recap"> Nothing to recap because it's the first meeting :)</p> 
                 <hr>
-                <h2> <a name="LookingForward"> Looking Forward</a> </h2>
-                <p> Next weeks lab is on CSS</p>
+                <h2 id="LookingForward"> <a name="LookingForward"> Looking Forward</a> </h2>
+                <p> Next weeks lab is on CSS. This lab was a lot of fun. I am adding random text to display the inline property for css. 
+                    HTML is really fun and CSS is also cool. I don't know what else to write so I am just going to end it here. 
+                </p>
                 <hr>
                 <h2> <a name="Questions"> Questions</a> </h2>
-                <p> None </p>
+                <p id="questions"> None. This lab was a lot of fun. I am adding random text to display the inline property for css. 
+                    HTML is really fun and CSS is also cool.<p> RANDOM STUFF TO SHOW BLOCKING</p> I don't know what else to write so I am just going to end it here. 
+                </p>
                 <hr>
                 <h2> <a name="SoundSample"> Sound Sample</a></h2>
                 <audio
@@ -85,7 +104,7 @@
                 <hr>
                 <h2>Text area</h2>
                 <textarea id="text" name="text" 
-                    rows="25" cols="50">
+                    rows="10" cols="20">
                 </textarea>
                 <hr>
                 <h2> datalist</h2>
@@ -122,9 +141,39 @@
                    <input type="radio" id="2025" name="year">
                    <label for="2025">2025</label><br>
                 </fieldset>
-                <button class="favorite styled" type="button">
+                <button class="favoritestyled" type="button">
                     Click this button for fun!
                 </button>
+            </section>
+            <hr>
+            <section class="flex">
+                <h2>flexbox example</h2>
+                <div>flex</div>
+                <div>box</div>
+                <div>example</div>
+            </section>
+            <hr>
+            <section>
+                <h2>Attribute selector example. See .css file</h2>
+                <p>Here is an external link to my linkedin: </p>
+                <a href="https://www.linkedin.com/in/muhammad-asad-imran-1b6888201/"
+                value= "_blank">Asad's linkedin</a>
+                <p>Here is an external link to my instagram</p>
+                <a href="https://www.instagram.com/asadimran__/"
+                value= "_blank">Asad's instagram</a>
+            </section>
+            <hr>
+            <section class="grid">
+                <h2>grid example</h2>
+                <div>this is</div>
+                <div>a</div>
+                <div>grid :)</div>
+            </section>
+            <hr>
+            <section>
+                <h2>combining two selectors example. See mystyle.css</h2>
+                <div id="divAttribute" class="classAttribute">This is a div element</div> 
+                <div id="divAttribute" class="classAttribute">This is another div element</div> 
             </section>
         </main>
         <footer>
